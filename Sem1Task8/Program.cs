@@ -13,3 +13,5 @@ for (int i = 2; i <= numberA; i = i+2)//используем цикл "For"
 {
     Console.Write(i + " ");//ответ
 }
+
+
