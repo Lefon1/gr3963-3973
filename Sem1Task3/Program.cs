@@ -18,7 +18,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 Console.Write("Введите номер дня недели: ");
-string? lineDay = Console.ReadLine();
+string? lineDay = Console.ReadLine()?? "0";
 
 if(lineDay!=null)
 {
