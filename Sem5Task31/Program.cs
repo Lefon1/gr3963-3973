@@ -3,13 +3,13 @@
 //из промежутка [-9, 9]. Найдите сумму отрицательных 
 //и положительных элементов массива.
 
-int[] Gen1DArr(int len, int min, int max)
+int[] Gen1DArr(int len, int minValue, int maxValue)
 {
-    if (min > max)//блок корректировки входных данных
+    if (minValue > maxValue)//блок корректировки входных данных
     {
-        int buf = min;
-        min = max;
-        max = buf;
+        int buf = minValue;
+        minValue = maxValue;
+        maxValue = buf;
     }
 
 
@@ -18,7 +18,7 @@ int[] Gen1DArr(int len, int min, int max)
 
     for (int i = 0; i < len; i++)
     {
-        arr[i] = rnd.Next(min, max + 1);
+        arr[i] = rnd.Next(minValue=100, maxValue=999);
     }
 
     return arr;
@@ -68,5 +68,5 @@ Print1DArr(testArr);
 DateTime d2 = DateTime.Now;
 (int posit,int negot) results = NegPosSum(testArr);
 Console.WriteLine(DateTime.Now - d2);
-PrintData("сумма положит",results.posit);
-PrintData("сумма положит",results.negot);
+PrintData("сумма положит ",results.posit);
+PrintData("сумма неготив ",results.negot);
