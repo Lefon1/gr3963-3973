@@ -13,7 +13,7 @@ double ReadData(string message)
   return num;
 }
 
-void PrintX(double k1, double b1, double k2, double b2)
+void PrintDataX(double k1, double b1, double k2, double b2)
 {
   double x = (b1 - b2) / (k2 - k1);
 
@@ -27,4 +27,4 @@ double b1 = ReadData($"Введите b1: ");
 double k2 = ReadData($"Введите k2: ");
 double b2 = ReadData($"Введите b2: ");
 Console.Write($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} ");
-PrintX(k1, b1, k2, b2);
+PrintDataX(k1, b1, k2, b2);
